@@ -14,8 +14,8 @@
         style="@style/st_titleNew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="80dp"
-        android:text="Affichage" />
+        android:text="Affichage"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/id_recherche"
@@ -23,6 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/input_bg"
+        android:textColor="@color/white"
+        android:cacheColorHint="@color/white"
         android:ems="10"
         android:hint="Rechercher..."
         android:inputType="textPersonName"
@@ -33,6 +35,8 @@
 
     <ListView
         android:id="@+id/lv_rech"
+        android:textColor="@color/white"
+        android:cacheColorHint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

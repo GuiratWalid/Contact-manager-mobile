@@ -14,9 +14,11 @@
         android:layout_marginEnd="40dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
-        android:text="Bienvenue!"
+        android:text="Bienvenue dans l'application !"
         android:textFontWeight="300"
-        android:textSize="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/title_acc"
         app:layout_constraintStart_toStartOf="@+id/title_acc"
         app:layout_constraintTop_toBottomOf="@+id/title_acc" />
