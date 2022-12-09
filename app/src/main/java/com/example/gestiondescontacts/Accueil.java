@@ -21,15 +21,9 @@ public class Accueil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
-        //tvusername=findViewById(R.id.title_acc);
         btn_ajout=findViewById(R.id.btn_ajout);
         btn_aff=findViewById(R.id.btn_aff);
 
-        btn_notifs=findViewById(R.id.btn_notif_activity);
-        //Intent x=this.getIntent();
-        //Bundle b=x.getExtras();
-        //String u=b.getString("USER");
-        //tvusername.setText("Accueil de Mr/Mme "+u);
         ContactManager manager=new ContactManager(Accueil.this);
         manager.ouvrir();
         Accueil.data=manager.selectionnertout();
@@ -53,14 +47,6 @@ public class Accueil extends AppCompatActivity {
             }
 
 
-        });
-        btn_notifs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i=new Intent(Accueil.this,Notifications.class);
-
-                startActivity(i);
-            }
         });
     }
 }

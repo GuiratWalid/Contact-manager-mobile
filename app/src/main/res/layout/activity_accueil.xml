@@ -60,16 +60,4 @@
         app:layout_constraintStart_toStartOf="@+id/btn_ajout"
         app:layout_constraintTop_toBottomOf="@+id/btn_ajout" />
 
-    <Button
-        android:id="@+id/btn_notif_activity"
-        style="@style/st_rouded_button"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="Notifications"
-        app:layout_constraintEnd_toEndOf="@+id/btn_aff"
-        app:layout_constraintStart_toStartOf="@+id/btn_aff"
-        app:layout_constraintTop_toBottomOf="@+id/btn_aff" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,10 +44,7 @@ public class Affichage extends AppCompatActivity {
            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                ArrayList<Contact> d = manager.selectionnertout();
                MyListViewAdapter ad = new MyListViewAdapter(Affichage.this, d);
-               // ad = new ArrayAdapter(Afficher_tout.this, android.R.layout.simple_list_item_1, d);
                l1 = new MyListViewAdapter(Affichage.this, d);
-               //ad = new RecyclerAdapter(d,Afficher_tout.this);
-               //lv.setAdapter(ad);
                data.clear();
                for (int c = 0; c < d.size(); c++) {
                    if (d.get(c).prenom.startsWith(charSequence.toString()) ||
@@ -57,11 +54,6 @@ public class Affichage extends AppCompatActivity {
                    }
                }
 
-               // ad = new ArrayAdapter(Afficher_tout.this, android.R.layout.simple_list_item_1, search_data);
-               //lv.setAdapter(ad);
-
-               //  l1 = new Mylistview(search_data, Afficher_tout.this);
-               // lv.setAdapter(l1);
                ad = new MyListViewAdapter(Affichage.this, data);
 
                lv.setAdapter(ad);

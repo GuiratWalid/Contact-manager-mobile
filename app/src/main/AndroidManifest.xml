@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GestionDesContacts">
-        <activity android:name=".SplashScreen"></activity>
-        <activity android:name=".Authentification" />
-        <activity android:name=".Inscription" />
 
-        <activity android:name=".Notifications" />
         <activity android:name=".Ajout" />
         <activity android:name=".Affichage" />
         <activity android:name=".Accueil" />
